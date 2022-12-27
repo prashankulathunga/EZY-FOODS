@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 100px;
+    background-color: lightgray;
+    width: 70%;
+    height: 100vh;
+}
+
+.card {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-image: url(../images/pizza.jpg);
+    background-size: cover;
+    width: 350px;
+    height: 450px;
+    padding-right: 1.5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(46, 44, 42, 0.747);
+    margin-top: 79%;
+    height: 170px;
+    border-top: 2px solid rgb(16, 19, 19);
+    border-radius: 10px;
+    color: white;
+}
+
+.content:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(46, 44, 42, 0.747);
+    margin-top: 79%;
+    height: 170px;
+    border-top: 2px solid rgb(16, 19, 19);
+    border-radius: 10px;
+    color: white;
+}
