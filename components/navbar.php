@@ -26,7 +26,7 @@ function navbar(){
             <li><a id="recipes" href="/#pg2">RECIPES</a></li>
             <li><a href="/pages/about.php">ABOUT US</a></li>
             <li><a href="/pages/university.php">UNIVERSITY</a></li>
-            <li><a href="/pages/admin/login.php">ADMIN</a></li>
+            <li><a href="/pages/admin/dashboard.php">ADMIN</a></li>
         </ul>
     </div>
     </div>

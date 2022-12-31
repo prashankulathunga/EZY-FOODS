@@ -31,9 +31,10 @@ $mysqli->close();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Admin-Panel</title>
+    <title>Login</title>
 
     <style>
       .footer {
@@ -77,13 +78,14 @@ $mysqli->close();
 
                   <div class="pt-1 mb-4">
                     <button class="btn btn-dark btn-lg btn-block" type="submit" value="login">Login</button>
+                    <a href="/" class="btn btn-primary btn-lg my-3" role="button">Back</a>
                   </div>
 
                   <!-- <a class="small text-muted" href="#!">Forgot password?</a>
                   <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
                       style="color: #393f81;">Register here</a></p> -->
-                  <a href="#!" class="small text-muted">Terms of use.</a>
-                  <a href="#!" class="small text-muted">Privacy policy</a>
+                  <a href="/pages/maintain.php" class="small text-muted">Terms of use.</a>
+                  <a href="/pages/maintain.php" class="small text-muted">Privacy policy</a>
                 </form>
 
               </div>

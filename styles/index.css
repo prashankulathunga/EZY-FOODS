@@ -12,14 +12,15 @@ body{
     background: linear-gradient(180deg,#232526,#414345);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250vh;
+    height: 230vh;
 }
 
 .main-container{
     position: relative;
     width: 70%;
-    height: 150vh;
-    background: linear-gradient(#F2994A,#F2C94C);
+    height: 100vh;
+    /* background: linear-gradient(#F2994A,#F2C94C); */
+    background: linear-gradient(#f88521,#ffdf4f);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,16 +58,16 @@ body{
   .card {
     width: 260px;
     height: 209px;
-    display: inline-block;
+    /* display: inline-block; */
     border-radius: 10px;
     padding: 15px;
     box-sizing: border-box;
     cursor: pointer;
   
-    margin-left: 7.5%;
+    /* margin-left: 7.5%;
   
     margin-top: 2.2%;
-    margin-bottom: 1%;
+    margin-bottom: 1%; */
     transition: transform 0.5s;
     border: 5px solid rgb(0, 99, 145);
   }
@@ -185,6 +186,8 @@ body{
 
   .footer-container{
     position: relative;
+    margin-bottom: 0;
+    bottom: 0;
     width: 100%;
     height: 60px;
     margin-top: 200px;
@@ -208,4 +211,15 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+  }
+
+  .row{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 30px;
+    column-gap: 30px;
+    /* background-color: red; */
   }

@@ -11,7 +11,8 @@ if (!isset($_SESSION['email'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EZY FOODS Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Recipe List</title>
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
@@ -32,6 +33,8 @@ if (!isset($_SESSION['email'])) {
     <div class="container my-5">
         <h2>List of Recipes</h2>
         <a href="/pages/admin/manage/add.php" class="btn btn-primary my-3" role="button">Add Recipe</a>
+        <a href="/pages/admin/dashboard.php" class="btn btn-primary my-3" role="button">Go To Dashboard</a>
+        <a href="/" class="btn btn-primary my-3" role="button">Home</a>
         <br>
         <table class="table table-hover my-3">
             <thead class="table-dark">

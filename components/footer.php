@@ -48,6 +48,8 @@ echo '
         display: flex;
         /* background-color: red; */
         scale: 1;
+        text-decoration: none;
+        border:none;
     
     }
     
@@ -123,9 +125,9 @@ echo '
         <div class="upper-container">
             <div class="left"><span>EZY FOODS</span></div>
             <div class="right">
-                <a href="#"><img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/facebook-new.png"/></a>
-                <a href="#"><img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/twitter-circled--v1.png"/></a>
-                <a href="#"><img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/linkedin-circled--v1.png"/></a>
+                <a href="/pages/maintain.php"><img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/facebook-new.png"/></a>
+                <a href="/pages/maintain.php"><img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/twitter-circled--v1.png"/></a>
+                <a href="/pages/maintain.php"><img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/linkedin-circled--v1.png"/></a>
                 
             </div>
         </div>
