@@ -1,0 +1,137 @@
+body{
+    opacity: 0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+    background: linear-gradient(180deg,#232526,#414345);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-container{
+    position: absolute;
+    width: 70%;
+    height: 100vh;
+    background: linear-gradient(#f88521,#ffdf4f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    overflow: auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.main-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar-container{
+    position: fixed;
+    width:70%;
+    height: 60px;
+    background-color: red;
+    z-index: 220;
+    }
+
+.title span {
+    color: brown;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    border: 2px solid black;
+    font-family: 'Balsamiq Sans', cursive; 
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-top: 15px;
+    font-size: 25px;
+}
+
+.position{
+    font-size: 15px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.id{
+    padding-top: 0;
+    margin: 0;
+    padding-bottom: 15px;
+}
+.contact {
+    width: 100%;
+    background-color: rgba(31, 28, 28, 0.856);
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.top {
+    width: 70%;
+    margin-top: 150px;
+    background: linear-gradient(#00B4DB,#0083B0);
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.middle {
+    width: 66%;
+    border: 2px solid black;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 66%;
+    border: 2px solid black;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.bottom h2 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 30px;
+}
+.team-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    row-gap: 20px;
+    column-gap: 80px;
+    border-top: 5px solid rgb(0, 130, 139);
+    border-bottom: 5px solid rgb(0, 130, 139);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-container{
+    position: relative;
+    margin-bottom: 0;
+    width: 100%;
+    height: 60px;
+  }

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@400;700&display=swap');
+
+body{
+    opacity: 0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    zoom: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background: linear-gradient(180deg,#232526,#414345);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250vh;
+}
+
+.main-container{
+    position: relative;
+    width: 70%;
+    height: 150vh;
+    background: linear-gradient(#f88521,#ffdf4f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    overflow: auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.main-container::-webkit-scrollbar {
+    display: none;
+  }
+
+p{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.waviy {
+    margin-top: 30%;
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+  }
+  .waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+.btn {
+    margin-top: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 400px;
+width: 200px;
+height: 70px;
+border: 3px solid rgb(61, 6, 6);
+color: rgb(78, 12, 12);
+background-color: transparent;
+font-size: 30px;
+transition: 0.4s;
+font-family: 'Balsamiq Sans', cursive;
+text-align: center;
+padding-bottom: 0px;
+margin-bottom: 0;
+}
+
+.btn:hover {
+border: 2px solid #0083B0;
+color: #21bcf0;
+}
+
+.btn{
+    text-decoration: none;
+}
