@@ -1,50 +1,173 @@
-body{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@400;700&display=swap');
 
-.main{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    padding: 100px;
-    background-color: lightgray;
-    width: 70%;
+body {
+    opacity: 0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-height: 100%;
+    background: linear-gradient(180deg,#232526,#414345);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
 }
+.main-container {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 100vh;
+    background: linear-gradient(#F2994A,#F2C94C);
+    padding-top: 50px;
+    min-height: 100%;
+    overflow: auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    /* display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 5px;
+    row-gap: 50px; */
+    /* background-color: #262626;
+    position: absolute;
+    top: 0;
+    bottom: 0; */
+}
 
+.main-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.card-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+    row-gap: 50px;
+
+}
 .card {
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    background-image: url(../images/pizza.jpg);
-    background-size: cover;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     width: 350px;
-    height: 450px;
-    padding-right: 1.5px;
+    height: 350px;
+    background: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+.card .image {
+    max-width:100%;
+    max-height:100%;
+    overflow: hidden;
+    
+}
+.card .image img {
+    width: 100%;
+    height: 350px;
+    transition: .5s;
+    object-fit:cover;
+}
+.card:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: #ff9c07;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.card .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.card .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: rgba(46, 44, 42, 0.747);
-    margin-top: 79%;
-    height: 170px;
-    border-top: 2px solid rgb(16, 19, 19);
+.link {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
+    padding: 10px;
+    color:#ff0000;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 120;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.link:hover {
+    border-color: rgb(221, 12, 12);
     color: white;
 }
 
-.content:hover {
+.category-name {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    width: 100%;
+    left: 0;
+    top: 0;
     text-align: center;
-    background-color: rgba(46, 44, 42, 0.747);
-    margin-top: 79%;
-    height: 170px;
-    border-top: 2px solid rgb(16, 19, 19);
-    border-radius: 10px;
-    color: white;
+    font-size: 50px;
+    z-index: 200;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
 }
+
+.category-title {
+    width: 90%;
+    background: linear-gradient(#00B4DB,#0083B0);
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: 50px;
+}
+
+.navbar-container{
+    position: fixed;
+    width:70%;
+    height: 60px;
+    background-color: red;
+    z-index: 220;
+    }
+
+.footer-container{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    }

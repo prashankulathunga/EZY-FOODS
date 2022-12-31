@@ -1,0 +1,40 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    border: 2px solid black;
+    font-family: 'Balsamiq Sans', cursive; 
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-top: 15px;
+    font-size: 25px;
+}
+
+.position{
+    font-size: 15px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.id{
+    padding-top: 0;
+    margin: 0;
+    padding-bottom: 15px;
+}
+.contact {
+    width: 100%;
+    background-color: rgba(31, 28, 28, 0.856);
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}

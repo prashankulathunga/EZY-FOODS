@@ -1,0 +1,7 @@
+CREATE TABLE `admin` (
+  `UNAME` varchar(255) DEFAULT NULL,
+  `UID` int(11) NOT NULL,
+  `UMAIL` varchar(255) DEFAULT NULL,
+  `UPASSWD` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`UID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
