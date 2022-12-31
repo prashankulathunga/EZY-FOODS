@@ -28,12 +28,12 @@ INSERT INTO `developers` (`id`, `name`, `position`, `email`, `uid`) VALUES
 (NULL, 'SI Madhavi', 'Designer', 'madhavifernando623@gmail.com', '25432');
 
 CREATE TABLE`admin` (
-    `id` INT NOT NULL AUTO_INCREMENT ,
-    `uname` varchar(255) DEFAULT NULL,
-    `umail` varchar(255) DEFAULT NULL,
-    `upasswd` varchar(255) DEFAULT NULL,
-    PRIMARY KEY (`id`)) ENGINE = InnoDB;
+    `UID` INT NOT NULL AUTO_INCREMENT ,
+    `UNAME` varchar(255) DEFAULT NULL,
+    `UMAIL` varchar(255) DEFAULT NULL,
+    `UPASSWD` varchar(255) DEFAULT NULL,
+    PRIMARY KEY (`UID`)) ENGINE = InnoDB;
 
-INSERT INTO `admin` (`uname`, `umail`, `upasswd`) VALUES 
-('test', 'test@test.com', '1234'), 
-('user', 'user@user.com', 'user');
+INSERT INTO `admin` (`UID`,`UNAME`, `UMAIL`, `UPASSWD`) VALUES 
+('100','test', 'test@test.com', '1234'), 
+('101','user', 'user@user.com', 'user');
