@@ -14,10 +14,14 @@ $category = $_GET['category'];
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="../styles/category.css">
   <link rel="stylesheet" href="../components/navbar.css">
-  <title>EZY FOODS Category</title>
+  <!-- <title>EZY FOODS Category</title> -->
 </head>
 <body onload="document.body.style.opacity='1'">
-
+<?php
+  $categories = array("Italian", "SriLankan", "Chineese", "Japanese", "Thai", "Desserts");
+  $title = $categories[$category-1];
+  echo '<title>'.$categories[$category-1].'</title>';;
+  ?>
 <div class="main-container">
 <div class="navbar-container">
     <?php include '../components/navbar.php'; 
@@ -25,7 +29,7 @@ $category = $_GET['category'];
     ?>
   </div>
 <div class="category-name"><div class="category-title">
-  THAI
+  <?php echo ''.$categories[$category-1].''; ?>
 </div>
 </div>
 <div class="card-cont">
