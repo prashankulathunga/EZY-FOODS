@@ -4,6 +4,7 @@ CREATE TABLE`recipe` (
     `ingredients` TEXT NOT NULL , 
     `method` TEXT NOT NULL ,
     `cooktime` INT(20) NOT NULL,
+    `category` VARCHAR(255) NOT NULL,
     `imgname` varchar(200) NOT NULL,
     `image` longtext NOT NULL, 
     `added` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP)
