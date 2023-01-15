@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="./about.css">
     <link rel="stylesheet" href="../styles/general.css">
-    <script type="text/javascript" src="../scripts/view.js"></script>
-    <link rel="stylesheet" href="../components/navbar.css">
+    <script type="text/javascript" src="./scripts/view.js"></script>
+    <link rel="stylesheet" href="./components/navbar.css">
     <title>About US</title>
 </head>
 <body onload="document.body.style.opacity='1'">
+    <div class="navbar-container">
+      <?php include './components/navbar.php'; 
+      navbar();
+      ?>
+    </div>
     <div class="main-container">
-        <div class="navbar-container">
-          <?php include '../components/navbar.php'; 
-          navbar();
-          ?>
-        </div>
     <div class="top">
             <h1 class="title"><span>About</span> US</h1>
         </div>
@@ -47,11 +47,11 @@
                 ?>
             </div>
         </div>
-        <div class="footer-container">
+        <!-- <div class="footer-container">
         <?php include '../components/footer.php'; 
         footer();
         ?>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>

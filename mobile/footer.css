@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lobster&family=Patrick+Hand&display=swap");
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(27, 27, 27);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.top img {
+    width: 40px;
+}
+
+.right{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left a{
+    font-family: kalam;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+.line{
+    height: 2px;
+    width: 89%;
+    background-color: white;
+    margin-top: 10px;
+    opacity: 0.2;
+}
+
+.line-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 400px) {
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left a{
+        text-align: center;
+        padding-right: 15px;
+        font-size: 19px;
+    }
+
+    .top img {
+        width: 35px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .right{
+        align-items: center;
+        width: 200px;
+        /* background-color: lightcoral; */
+    }
+    .top{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+    }
+    .bottom {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .line{
+        opacity: 0.2;
+    }
+    
+}

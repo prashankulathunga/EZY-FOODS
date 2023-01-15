@@ -14,6 +14,8 @@ $category = $_GET['category'];
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="../styles/category.css">
   <link rel="stylesheet" href="../components/navbar.css">
+  <link rel="stylesheet" href="../styles/general.css">
+  <script type="text/javascript" src="./scripts/view.js"></script>
   <!-- <title>EZY FOODS Category</title> -->
 </head>
 <body onload="document.body.style.opacity='1'">

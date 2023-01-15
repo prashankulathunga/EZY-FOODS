@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/maintain.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <script type="text/javascript" src="./scripts/view.js"></script>
     <title>Under Maintenance</title>
 </head>
 <body onload="document.body.style.opacity='1'">

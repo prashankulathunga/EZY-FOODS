@@ -84,11 +84,11 @@ function footer(){
             .fleft a{
                 text-align: center;
                 padding-right: 15px;
-                font-size: 25px;
+                font-size: 19px;
             }
 
             .ftop img {
-                width: 40px;
+                width: 35px;
                 margin-top: 10px;
                 margin-bottom: 5px;
             }

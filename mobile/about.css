@@ -1,20 +1,4 @@
-/* body{
-    opacity: 0;
-    transition: opacity 2s;
-    -webkit-transition: opacity 2s;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100%;
-    background: linear-gradient(180deg,#232526,#414345);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-} */
 body{
-    opacity: 0;
-    transition: opacity 2s;
-    -webkit-transition: opacity 2s;
     display: flex;
     justify-content: center;
     min-height: 100%;
@@ -34,31 +18,19 @@ body{
     overflow: auto;
     border-left: 2px solid black;
     border-right: 2px solid black;
-}
-/* .main-container{
-    position: absolute;
-    width: 70%;
     height: 100vh;
-    background: linear-gradient(#f88521,#ffdf4f);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100%;
-    overflow: auto;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-} */
-.main-container::-webkit-scrollbar {
-    display: none;
-  }
-
-  .navbar-container{
-    position: fixed;
-    width:70%;
+}
+.navbar-container{
+    position: relative;
+    width:70.1%;
     height: 60px;
     background-color: red;
     z-index: 220;
     }
+
+.main-container::-webkit-scrollbar {
+    display: none;
+  }
 
 .title span {
     color: brown;
@@ -119,7 +91,7 @@ body{
     margin-top: 100px;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: 'Balsamiq Sans', cursive;
     text-align: center;
 }
@@ -153,8 +125,9 @@ body{
 }
 
 .footer-container{
+    position: relative;
     width: 100%;
-    height: auto;
+    height: 100px;
   }
 
 @media (max-width: 400px){
