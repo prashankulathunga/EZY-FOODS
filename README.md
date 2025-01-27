@@ -24,6 +24,7 @@ EZY-FOODS is a web-based food management system designed to simplify the process
 
 ## Technology Stack
 
+- **Backend**: PHP
 - **Database**: MySQL
 - **Frontend**: HTML, CSS, JavaScript
 - **Authentication**: Secure role-based access control
